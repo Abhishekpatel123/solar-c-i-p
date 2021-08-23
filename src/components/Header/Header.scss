@@ -1,0 +1,74 @@
+@import "../../assets/scss/variables.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  padding: 14px $lr-common;
+  align-items: center;
+  .menu {
+    color: rgb(20, 43, 111);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 1.625rem;
+    margin: 0px;
+    position: relative;
+  }
+  .animation {
+    position: relative;
+    cursor: pointer;
+  }
+  .animation::after {
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    transform:  translateY(10px) scale(1, 0);
+    border-radius: 3px;
+    height: 4px;
+    background-color: $primary;
+    bottom: -10px;
+    transition: all .3s ease-out;
+    left: 0;
+    transform-origin: left;
+  }
+  .animation:hover::after {
+    transform: translateY(0) scale(1, 1);
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      // position: absolute;
+      // left: 50% - 5%;
+      height: 22px;
+      width: 70px;
+    }
+  }
+
+  .right_link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .store {
+      font-size: 1.3rem;
+    }
+
+    span:nth-child(1) {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $secondary;
+      margin-right: 1rem;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+}

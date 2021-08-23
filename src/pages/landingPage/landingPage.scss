@@ -1,0 +1,10 @@
+@import '../../assets/scss/variables.scss';
+
+.app {
+  width: 100%;
+  .strip {
+    background-color: $secondary;
+    height: 5px;
+    width: 100%;
+  }
+}

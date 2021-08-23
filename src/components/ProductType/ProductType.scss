@@ -1,0 +1,44 @@
+.pt-type {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  .content {
+    width: 80%;
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 4rem 0;
+  }
+}
+
+// card
+.pt-card {
+  width: 240px;
+  background-color: #f8f7f9;
+  object-fit: contain;
+  overflow: hidden;
+  .title {
+    text-align: center;
+    color: rgb(20, 43, 111);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 12px 0px;
+  }
+  .image {
+    overflow: hidden;
+    height: 120px;
+    img {
+      width: 100%;
+      object-fit: contain;
+      transform: scale(1);
+      transition: all 0.4s ease-in;
+    }
+  }
+  &:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+    overflow: hidden;
+  }
+}
