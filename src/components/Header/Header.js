@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="header">
       <div></div>
-      <div>
+      <div style={{ height: "100%" }}>
         <span className="menu animation">Menu</span>
       </div>
       <div className="logo">
@@ -25,7 +25,7 @@ function Header() {
           ></path>
         </svg>
       </div>
-      <div className="right_link">
+      <div className="right_link" style={{ height: "100%" }}>
         <span className="animation">Who We Are</span>
         <span className="store animation">
           <BsBag />
