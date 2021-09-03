@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-// scss
+// -- scss
 import "./assets/scss/_global.scss";
 import "./assets/scss/_typography.scss";
 

@@ -15,7 +15,9 @@ function Banner() {
           <div>The future</div>
           <div className="right">of health</div>
           <div>
-            <em style={{ fontWeight: 500 }}>— is clear.</em>
+            <em style={{ letterSpacing: "3px", fontFamily: "Dutch801" }}>
+              — is clear.
+            </em>
           </div>
         </h1>
         <button>Shop All</button>

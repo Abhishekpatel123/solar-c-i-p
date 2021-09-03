@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner";
 import ProductType from "../../components/ProductType/ProductType";
 import DailyEssential from "../../components/DailyEssential/DailyEssential";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
-
+import LastSection from "../../components/lastSection/LastSection";
 function LandingPage() {
   return (
     <div className="app">
@@ -15,7 +15,9 @@ function LandingPage() {
       <Banner />
       <ProductType />
       <DailyEssential />
+
       <WhoWeAre />
+      <LastSection />
     </div>
   );
 }

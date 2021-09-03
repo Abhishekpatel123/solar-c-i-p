@@ -10,8 +10,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-// @media (max-width: 1000px) {
-//   html {
-//     font-size: 10px;
-//   }
-// }
+@font-face {
+  font-family: LL Circular;
+  src: url(../fonts/lineto-circular-medium.woff2);
+}
+
+@font-face {
+  font-family: Dutch801;
+  src: url(../fonts/3653C9_1_0.woff2);
+}
+
+@font-face {
+  font-family: Dutch801 N;
+  src: url(../fonts/3653C9_0_0.woff2);
+}
